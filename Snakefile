@@ -18,7 +18,7 @@ rule get_all_archive:
         """
 
 rule get_all_filenames:
-    input: 
+    input:
         script = "code/get_ghcnd_data.bash",
         archive = "data/ghcnd_all.tar.gz"
     output: 
@@ -29,7 +29,7 @@ rule get_all_filenames:
         """
 
 rule get_inventory:
-    input: 
+    input:
         script = "code/get_ghcnd_data.bash"
     output: 
         "data/ghcnd-inventory.txt"
