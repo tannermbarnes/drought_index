@@ -2,8 +2,11 @@ name: drought
 channels:
   - conda-forge
   - base
+  - bioconda
   - R
 dependencies:
   - r-base
   - r-tidyverse
+  - wget
+  - snakemake
   
