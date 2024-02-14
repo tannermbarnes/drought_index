@@ -9,4 +9,5 @@ dependencies:
   - r-tidyverse
   - wget
   - snakemake
+  - graphviz=9.0.0
   
