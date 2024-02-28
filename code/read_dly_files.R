@@ -10,7 +10,7 @@ quadruple <- function(x){
 widths <- c(11, 4, 2, 4, rep(c(5, 1, 1, 1), 31))
 headers <- c("ID", "YEAR", "MONTH", "ELEMENT", unlist(map(1:31, quadruple)))
 
-read_fwf("data/ghcnd_cat.gz",
+read_fwf("data/ghcnd_cat.fwf.gz",
     fwf_widths(widths, headers), 
     na = c("NA", "-9999"),
     col_types = cols(.default = col_character()),
